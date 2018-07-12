@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>weatherchecker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdFotq0lRfY3oYfUVJyVcYQ_7rPPRAA78VYctdPrAeU9p-Opf);background-color: aliceblue;">
+    <nav style="background-color: aliceblue;" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a style="margin-left: 550px;color:black;" class="navbar-brand" href="/"><b>MONSOON CHECKER</b></a>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div style="background-image: url(https://media.giphy.com/media/l41YePgsv92CTdTVe/giphy.gif);background-size:contain;height:300px;" class="jumbotron text-center">
+            <p>Check the weather of city</p> 
+        </div>
+        <h2 style="font-weight:900px"><b>Check weather here</b></h2>
+        <p><b>Enter the name of the city</b></p>
+            <form style="margin:20px;">
+    <b>City:</b> <br>
+    <input  style="margin:3px;height:40px;width:30%;border-radius:4px;" class="text-center" type="text" placeholder="Enter Location. e.g New Delhi" id="location" required> <br>
+                 <input  style="margin:3px;background-color: DodgerBlue;color:white;border-radius: 4px;height: 40px;width: 15%;" type="button" id="btn_email" class="btn btn-primary" onclick="checkweather();" value="Check">
+        </form>
+
+        <div id="message">
+
+        </div>
+
+        <div class="result" id="result">
+            <h1 class="text-center">Enter a valid location and hit Check Button</h1>            
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
